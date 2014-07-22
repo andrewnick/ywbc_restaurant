@@ -20,10 +20,11 @@ After the project has cloned successfully then run the following to pull in the 
 
 This will move you into your new project directory and initialize the bootstrap module and pull in the changes.
 
-We now need to remove the initial .git repository information so once we are in our project directory run the following command.
+We now need to change the current git configuration; so once we are in our project directory run the following command.
 
-`rm -rf .git && git init`
+`git remote rm origin`
 
-This will delete the old git information and prevent you from pushing changes back to the boilerplate project; and then we initialize a new git project.
+This will remove the old remote branch and prevent you from pushing changes back to the boilerplate project.
 
-From here you can `git add .` to add all the files `git commit -m "your message"` and then finally you will need to set up your remote repository before pushing the changes (follow the instructions on GitHub when you create a new repository). 
+From here you set the remote of your project you've setup on Github using `git remote add origin <url>`.
+Once this new remote has been set you can `git add .` to add all the files `git commit -m "your message"` and then finally `git push -u origin master` to push your changes to your project repository. (These instructions can also be followed on GitHub when you create a new repository). 
