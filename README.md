@@ -12,10 +12,18 @@ Inside the main.scss file you will see a comment for where you can include your 
 
 To install this boilerplate for your own use; in terminal make sure you are in the `~/Sites` directory.
 
-Run `git clone --depth 1 https://github.com/ywbc-chch/bootstrap-boilerplate.git YourProjectName`
-Make sure to change `YourProjectName` to something meaningful. This will give you a nice clean history in the git log.
+Run `git clone https://github.com/ywbc-chch/bootstrap-boilerplate.git YourProjectName`
+Make sure to change `YourProjectName` to something meaningful.
 
 After the project has cloned successfully then run the following to pull in the bootstrap module.
 `cd YourProjectName && git submodule update --init`
 
 This will move you into your new project directory and initialize the bootstrap module and pull in the changes.
+
+We now need to remove the initial .git repository information so once we are in our project directory run the following command.
+
+`rm -rf .git && git init`
+
+This will delete the old git information and prevent you from pushing changes back to the boilerplate project; and then we initialize a new git project.
+
+From here you can `git add .` to add all the files `git commit -m "your message"` and then finally you will need to set up your remote repository before pushing the changes (follow the instructions on GitHub when you create a new repository). 
