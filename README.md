@@ -16,6 +16,6 @@ Run `git clone --depth 1 https://github.com/ywbc-chch/bootstrap-boilerplate.git 
 Make sure to change `YourProjectName` to something meaningful. This will give you a nice clean history in the git log.
 
 After the project has cloned successfully then run the following to pull in the bootstrap module.
-`cd YourProjectName && git submodules update --init`
+`cd YourProjectName && git submodule update --init`
 
 This will move you into your new project directory and initialize the bootstrap module and pull in the changes.
