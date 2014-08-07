@@ -1,0 +1,18 @@
+.header_background{
+
+	// position: relative;
+	// z-index: 20;
+
+	height: $header_height;
+	background-color: $lite-brown;
+}
+
+.header_logo {
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+
+.header_logo_container {
+	max-height: $header_height;
+}

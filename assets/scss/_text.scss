@@ -1,0 +1,77 @@
+// Headings
+
+h1,
+h2,
+h3,
+h4 {
+		font-family: $header_font_family;
+		font-weight: $header_font_weight;
+}
+
+ 
+h1 {
+
+	@include fontSizeColour(54px, $gold);
+
+}
+
+h2 {
+
+	@include fontSizeColour(45px, $gold);
+
+}
+
+h3 {
+
+	@include fontSizeColour(36px, $gold);
+
+}
+
+h4 {
+
+	@include fontSizeColour(27px, $off-white);
+
+}
+
+h5 {
+	
+	font-family: $body_font_family;
+	font-weight: $body_font_weight;
+	line-height: 1.5;
+	margin-top: $baseline;
+	margin-bottom: 0px;
+
+	@include fontSizeColour(18px, $off-white);
+	
+	&.nav_item {
+		margin: 0px;
+		background-color: $lite-brown;
+		line-height: $nav_item_size;
+		height: $nav_item_size;
+
+	}
+
+
+}
+
+p {
+	line-height: 1.5;
+	margin-top: $baseline;
+	margin-bottom: 0px;
+	font-family: $body_font_family;
+	font-weight: $body_font_weight;
+	font-size: $body_font_size;
+	color: $gold;
+}
+
+.link_text {
+
+	text-decoration: none;
+	color: darken($gold, 20%);
+	
+
+	&:hover {
+		color: darken($gold, 20%);
+		text-decoration: underline;
+	}
+}

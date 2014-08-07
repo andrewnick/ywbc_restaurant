@@ -1,7 +1,14 @@
+@import "../../bootstrap/assets/stylesheets/bootstrap";
 // Import Variables first to override the defaults set in bootstrap
 @import "variables";
+@import "mixins";
+@import "animations";
+@import "text";
+@import "header";
+@import "nav";
+@import "content";
 // Import Bootstrap
-@import "../../bootstrap/assets/stylesheets/bootstrap";
+
 
 /*********************************
 * Your own imports shoud go here

@@ -1,1 +1,40 @@
-$brand-primary: #7B8489;
+$tablet: 750px;
+$desktop: 970px;
+$large: 1170px;
+
+$background-colour: #1e0000;
+
+// Colours
+$gold: #c7a061;
+$lite-green: #97a863;
+$dark-green: #768b49;
+$olive-green: #59481f;
+$off-white: #f1ecdc;
+$red-brown: #59481f;	
+$lite-brown: #754C24;
+$dark-brown: #5b2713;
+
+
+// Font families and settings
+$header_font_family: 'Smythe', cursive;
+$header_font_weight: normal;
+
+$body_font_family: 'Quando', serif;
+$body_font_weight: normal;
+$body_font_size: 18px;
+
+
+//Grid Dimensions
+$gridheight: 3px;
+$baseline: 27px;
+$section_vertical_padding: $gridheight * 12; // Provides padding distance between sections;
+
+//Header Variables
+$header_height: $gridheight * 40; 
+
+// Navigation Variables
+$nav_button_size: 75px;
+$nav_item_size: $gridheight * 20;
+
+// Glyphicons location visible to scss compiler
+$icon-font-path: "../bootstrap/assets/fonts/bootstrap/";
