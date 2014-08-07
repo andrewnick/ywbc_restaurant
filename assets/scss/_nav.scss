@@ -1,15 +1,19 @@
-nav {
-	// position:absolute;
-	// z-index: 10;
+.nav_menu {
+	position: realtive;
+	z-index: 10;
 }
 
 .nav_item {
 
-	@include addBorder($gold, $width: 3px, $bottom: true, $left: true, $right: true);
+	@include addBorder($gold, $width: 1px, $bottom: true);
 
 	@include respond ($tablet){
 		border: none;	
 	}
+}
+
+.nav_item--first{
+	@include addBorder($gold, $width: 1px, $top: true);
 }
 
 .nav_btn_container{
@@ -18,11 +22,11 @@ nav {
 
 .nav_btn {
 
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -($nav_button_size / 2);
-	margin-left: -($nav_button_size / 2);
+	position: fixed;
+	top: $gridheight * 6;
+	right: $gridheight * 6;
+	// margin-top: -($nav_button_size / 2);
+	// margin-left: -($nav_button_size / 2);
 
 	background-color: transparent;
 	border: none;

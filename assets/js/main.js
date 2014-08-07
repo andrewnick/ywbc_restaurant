@@ -3,7 +3,7 @@
 // var large = 1170;
 
 $(document).ready( function(){
-	
+
 	$('button').on('click', function () {
 		$(".nav_item_container").slideToggle();
 	})

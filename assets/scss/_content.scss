@@ -1,7 +1,25 @@
 .content_container{
+	position: relative;
+	z-index: -1;
 	background-color: $dark-brown;
+
+	padding-bottom: $gridheight*10;
 }
 
 .content_info_title{
 	margin-right: 30px;
+}
+
+.content_header{
+	background-color: $lite-brown;
+	//height: $header_height;
+}
+
+.content_location_map_overlay {
+   background:transparent; 
+   position:relative; 
+   // width:640px;
+   // height:480px; /* your iframe height */
+   // top:480px;  /* your iframe height */
+   // margin-top:-480px;  /* your iframe height */
 }

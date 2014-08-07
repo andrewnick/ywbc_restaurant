@@ -3,13 +3,20 @@
   
   <?php require_once("includes/head.php") ?>
   
-  <body>
+  <body class="container-fluid">
+
       <?php require_once('includes/header.php') ?>
 
-	<main class="container-fluid">
+	<main>
 
       <?php require_once('includes/content-information.php') ?>
 
+      <?php require_once ('includes/content-menu.php'); ?>
+
+      <?php require_once ('includes/content-location.php'); ?>
+  
+      <?php require_once ('includes/content-about.php'); ?>
+      
 	</main>
     <!-- Bootstrap core JavaScript
     ================================================== -->

@@ -366,8 +366,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  src: url("../bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("../bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 
 /* line 25, ../../bootstrap/assets/stylesheets/bootstrap/_glyphicons.scss */
@@ -8154,7 +8154,7 @@ p {
   font-family: "Quando", serif;
   font-weight: normal;
   font-size: 18px;
-  color: #c7a061;
+  color: #f1ecdc;
 }
 
 /* line 67, ../scss/_text.scss */
@@ -8170,26 +8170,26 @@ p {
 
 /* line 1, ../scss/_header.scss */
 .header_background {
-  height: 120px;
+  height: 111px;
   background-color: #754c24;
 }
 
-/* line 10, ../scss/_header.scss */
+/* line 6, ../scss/_header.scss */
 .header_logo {
-  padding-top: 10px;
-  padding-bottom: 5px;
+  height: 93px;
+  padding-top: 18px;
+  padding-left: 18px;
 }
 
-/* line 16, ../scss/_header.scss */
-.header_logo_container {
-  max-height: 120px;
+/* line 1, ../scss/_nav.scss */
+.nav_menu {
+  position: realtive;
+  z-index: 10;
 }
 
 /* line 6, ../scss/_nav.scss */
 .nav_item {
-  border-left: 3px solid #c7a061;
-  border-bottom: 3px solid #c7a061;
-  border-right: 3px solid #c7a061;
+  border-bottom: 1px solid #c7a061;
 }
 @media screen and (min-width: 750px) {
   /* line 6, ../scss/_nav.scss */
@@ -8199,49 +8199,52 @@ p {
 }
 
 /* line 15, ../scss/_nav.scss */
-.nav_btn_container {
-  height: 120px;
+.nav_item--first {
+  border-top: 1px solid #c7a061;
 }
 
 /* line 19, ../scss/_nav.scss */
+.nav_btn_container {
+  height: 111px;
+}
+
+/* line 23, ../scss/_nav.scss */
 .nav_btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -37.5px;
-  margin-left: -37.5px;
+  position: fixed;
+  top: 18px;
+  right: 18px;
   background-color: transparent;
   border: none;
   width: 75px;
   height: 75px;
   outline: none;
 }
-/* line 35, ../scss/_nav.scss */
+/* line 39, ../scss/_nav.scss */
 .nav_btn:active, .nav_btn.active {
   border: none;
   outline: none;
   background-color: transparent;
 }
-/* line 40, ../scss/_nav.scss */
+/* line 44, ../scss/_nav.scss */
 .nav_btn:active:focus, .nav_btn.active:focus {
   color: #768b49;
   outline: none;
 }
-/* line 47, ../scss/_nav.scss */
+/* line 51, ../scss/_nav.scss */
 .nav_btn:hover {
   background-color: transparent;
 }
-/* line 50, ../scss/_nav.scss */
+/* line 54, ../scss/_nav.scss */
 .nav_btn:hover > .nav_btn_line {
   border: 1px solid black;
 }
-/* line 55, ../scss/_nav.scss */
+/* line 59, ../scss/_nav.scss */
 .nav_btn:focus {
   background-color: transparent;
   outline: none;
 }
 
-/* line 63, ../scss/_nav.scss */
+/* line 67, ../scss/_nav.scss */
 .nav_btn_line {
   display: block;
   background-color: #f1ecdc;
@@ -8250,12 +8253,12 @@ p {
   border-radius: 3px;
 }
 
-/* line 71, ../scss/_nav.scss */
+/* line 75, ../scss/_nav.scss */
 .nav_btn_line + .nav_btn_line {
   margin-top: 15px;
 }
 
-/* line 75, ../scss/_nav.scss */
+/* line 79, ../scss/_nav.scss */
 .nav_item_container {
   display: none;
   text-align: center;
@@ -8263,12 +8266,31 @@ p {
 
 /* line 1, ../scss/_content.scss */
 .content_container {
+  position: relative;
+  z-index: -1;
   background-color: #5b2713;
+  padding-bottom: 30px;
 }
 
-/* line 5, ../scss/_content.scss */
+/* line 9, ../scss/_content.scss */
 .content_info_title {
   margin-right: 30px;
+}
+
+/* line 13, ../scss/_content.scss */
+.content_header {
+  background-color: #754c24;
+}
+
+/* line 18, ../scss/_content.scss */
+.content_location_map_overlay {
+  background: transparent;
+  position: relative;
+}
+
+/* line 1, ../scss/_menu.scss */
+.menu_list {
+  list-style: none;
 }
 
 /*********************************

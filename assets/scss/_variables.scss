@@ -30,7 +30,8 @@ $baseline: 27px;
 $section_vertical_padding: $gridheight * 12; // Provides padding distance between sections;
 
 //Header Variables
-$header_height: $gridheight * 40; 
+$header_height: $gridheight * 37; 
+$header_padding: $gridheight * 5;
 
 // Navigation Variables
 $nav_button_size: 75px;
@@ -38,3 +39,6 @@ $nav_item_size: $gridheight * 20;
 
 // Glyphicons location visible to scss compiler
 $icon-font-path: "../bootstrap/assets/fonts/bootstrap/";
+
+// // Bootstrap variables
+// $grid-float-breakpoint: 0px !important;
