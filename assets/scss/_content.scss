@@ -1,7 +1,7 @@
 .content_container{
 	position: relative;
-	z-index: -1;
-	background-color: $dark-brown;
+	z-index: 1;
+	background-color: $dark;
 
 	padding-bottom: $gridheight*10;
 }
@@ -11,8 +11,10 @@
 }
 
 .content_header{
+	padding-top: 10px;
+	padding-left: $gridheight * 6;
 	background-color: $lite-brown;
-	//height: $header_height;
+	height: $header_height;
 }
 
 .content_location_map_overlay {

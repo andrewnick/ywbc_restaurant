@@ -64,6 +64,22 @@ p {
 	color: $off-white;
 }
 
+a {
+	text-decoration: none;
+	line-height: 1.5;
+	margin-top: $baseline;
+	margin-bottom: 0px;
+	font-family: $body_font_family;
+	font-weight: $body_font_weight;
+	font-size: $body_font_size;
+	color: $off-white;
+
+	&:hover {
+		text-decoration: none;
+		color: darken($off-white, 50%);
+	}
+}
+
 .link_text {
 
 	text-decoration: none;

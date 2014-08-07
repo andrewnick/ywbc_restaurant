@@ -5,8 +5,8 @@
 	</div>
 	<!-- Nav tabs -->
 	<ul class="nav nav-tabs nav-justified" role="tablist">
-	  <li class="active"><a href="#food" role="tab" data-toggle="tab">Food</a></li>
-	  <li><a href="#drinks" role="tab" data-toggle="tab">Drink</a></li>
+	  <li class="active nav_tab"><a href="#food" role="tab" data-toggle="tab">Food</a></li>
+	  <li class="nav_tab"><a href="#drinks" role="tab" data-toggle="tab">Drink</a></li>
 	</ul>
 
 	<!-- Tab panes -->
@@ -47,7 +47,7 @@
 	  </div>
 	  <div class="tab-pane fade" id="drinks">
 	  	<ul class="menu_list">
-			<li>
+			<li> 
 				<h4>Marsden...............$15</h4>
 			</li>
 			<li>

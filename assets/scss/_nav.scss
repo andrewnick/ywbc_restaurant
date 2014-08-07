@@ -1,19 +1,49 @@
 .nav_menu {
-	position: realtive;
+	//position: fixed;
 	z-index: 10;
+	//margin-left:200px;
 }
 
 .nav_item {
 
+	text-decoration: none;
+
+
+}
+
+.nav_item_container--first{
+	@include addBorder($gold, $width: 1px, $top: true);
+}
+
+.nav_item_container {
+	display: block;
+	border-radius: 5px;
+	text-align: center;
+	
+	height: $gridheight * 20;
+	line-height: $gridheight *20;
+	background-color: $lite-brown;
 	@include addBorder($gold, $width: 1px, $bottom: true);
 
 	@include respond ($tablet){
-		border: none;	
+		border: none;
+		line-height: $header_height;
 	}
-}
 
-.nav_item--first{
-	@include addBorder($gold, $width: 1px, $top: true);
+	// margin-top: -50px;
+	// postion: relative;
+	// z-index: 5;
+
+	// $i: 1s;
+	// @for $item from 1 to 6 {
+		
+	// 	&:nth-child(#{$item}){
+	// 		@include animation(slideDown, 3s, linear, $i);
+	// 	}
+
+	// 	$i: $i + .2s;
+	// }
+
 }
 
 .nav_btn_container{
@@ -23,10 +53,9 @@
 .nav_btn {
 
 	position: fixed;
+	z-index: 10;
 	top: $gridheight * 6;
 	right: $gridheight * 6;
-	// margin-top: -($nav_button_size / 2);
-	// margin-left: -($nav_button_size / 2);
 
 	background-color: transparent;
 	border: none;
@@ -59,6 +88,10 @@
 	&:focus {
 		background-color: transparent;
 	  	outline: none;
+	}
+
+	@include respond ($tablet){
+		display: none;
 	}
 }
 
@@ -93,5 +126,9 @@
 
 	// 	$i: $i + .2s;
 	// }
+
+}
+
+.nav_tab {
 
 }

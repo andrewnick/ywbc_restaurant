@@ -1,18 +1,18 @@
 <section class="row content_container">
 	<article class="col-xs-12  col-sm-offset-2 col-sm-4">
 		<div class="row">
-			<h1 class="col-xs-offset-2">Hours</h1>
+			<h1 class="col-xs-8 col-xs-offset-2">Hours</h1>
 		</div>
 		<div class="row">
-			<h4 class="col-xs-offset-2">Mon - Fri: 11am - 11 pm</h4>
-			<h4 class="col-xs-offset-2">Sat - Sun: 11am - 1 am</h4>
+			<h4 class="col-xs-8 col-xs-offset-2">Mon - Fri: 11am - 11 pm</h4>
+			<h4 class="col-xs-8 col-xs-offset-2">Sat - Sun: 11am - 1 am</h4>
 		</div>
 	</article>
 
 	<article class="col-xs-12 col-sm-4">
 
 		<div class="row">
-			<h1 class="col-xs-offset-2">Contact</h1>
+			<h1 class="col-xs-8 col-xs-offset-2">Contact</h1>
 		</div>
 
 		<div class="row">
