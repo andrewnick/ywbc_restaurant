@@ -1,3 +1,13 @@
+.move_left {
+	@include animation(slideLeft, 1s, cubic-bezier(0.565, -0.295, 0.445, 1.325), 0);
+}
+
+.move_right {
+	@include animation(slideRight, 1s, cubic-bezier(0.565, -0.295, 0.445, 1.325), 0);
+}
+
+
+
 .content_container{
 	position: relative;
 	z-index: 1;
@@ -18,6 +28,7 @@
 }
 
 .content_location_map_overlay {
+	@include clearfix();
    background:transparent; 
    position:relative; 
    // width:640px;

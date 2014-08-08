@@ -5,27 +5,28 @@ var large = 1170;
 $(document).ready( function(){
 
 	$('button').on('click', function () {
-		// Trigger animation
 
-		// Toggle in and out
-		//$(".nav_item_container").show();// 
-		$(".nav_item_container").slideToggle();// 
-	})
+		$(".nav_item_container").show();
 
-	// // if ((window).outerWidth >= tablet) {		
-	// // 	$('.nav_item_container').removeAttr('style');
-	// // 	$('.nav_item_container').css({'display':'block'});
-	// // }
+		if ($('main').hasClass('move_left')) {
 
-	// // $(window).on('resize', function  () {
-	// // 	var self = $(this);
-	// // 	var winWidth = self.outerWidth();
+			$("main").addClass('move_right');
+			$("main").removeClass('move_left');
 
-	// // 	if( winWidth >= tablet) {
-	// // 		$('.nav_item_container').removeAttr('style');
-	// // 		$('.nav_item_container').css({'display':'block'});
-	// // 	}
-	// // })
+		} else {
+
+			$("main").addClass('move_left');
+			$("main").removeClass('move_right');
+		}
+
+		
+	});
+
+	$(".nav_item_container").on('click', function(){
+
+		$("main").addClass('move_right');
+		$("main").removeClass('move_left');
+	});
 
 	$(window).on('resize' , function(){
 		if ($('button').css('display') == 'none'){

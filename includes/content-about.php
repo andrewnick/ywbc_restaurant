@@ -4,7 +4,7 @@
 		<h2>About</h2>
 	</div>
 
-	<div class="col-xs-12">
+	<div class="col-xs-12 col-sm-offset-4 col-sm-5">
 			<p>In 2015 Bell and Sons converted the Sign of
 			 the Bellbird shelter into a fully catered resturant
 			 and bar. </p>

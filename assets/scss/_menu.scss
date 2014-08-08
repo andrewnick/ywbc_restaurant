@@ -1,3 +1,39 @@
+// Menu tab colours
+$menu_tab_colour_active: lighten($dark, 50%);
+$menu_tab_colour_inactive:	$dark;
+
 .menu_list {
-	list-style: none;
+	display: block;
+	margin: 0 auto;
+	margin-top: -9px;
+}
+
+.nav-justified > li, .nav-tabs.nav-justified > li {
+	border-radius: 0px;
+	float: left;
+	width: 50%;
+}
+
+.nav-tabs.nav-justified > li > a {
+	margin-right: 0;
+	border-radius: 4px 4px 0px 0px;
+}
+
+.nav_tab_pane {
+	background-color: $menu_tab_colour_active;
+}
+
+.nav_tab {
+
+	background-color: $menu_tab_colour_inactive;
+	border: grey;
+
+}
+
+.nav-tabs > li.active > a { 
+	background-color: $menu_tab_colour_active;
+
+	&:hover {
+		background-color: $menu_tab_colour_active;
+	}
 }

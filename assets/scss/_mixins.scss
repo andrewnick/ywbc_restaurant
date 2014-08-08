@@ -1,18 +1,48 @@
-@mixin respond($breakpoint){
-	@media screen and (min-width: $breakpoint){
-		@content;
-	}
-}
-
-@mixin clearfix {
-	&:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-}
-
 /* mixins to make our lives easier */
+ 
+@mixin respond($breakpoint){
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+ 
+ 
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+ 
+@mixin transition($property, $duration, $ease, $delay) {
+  -webkit-transition: $property $duration $ease $delay;
+  -moz-transition: $property $duration $ease $delay;
+  -o-transition: $property $duration $ease $delay;
+  -ms-transition: $property $duration $ease $delay;
+  transition: $property $duration $ease $delay;
+}
+ 
+@mixin manyTransitions( $list, $time, $easing, $delay ) {
+    $transitions: ();
+ 
+    @each $transition in $list {
+        $trans: unquote( "#{$transition} #{$time} #{$easing} #{$delay}" );
+        $transitions: append( $transitions, $trans, comma );
+    }
+ 
+    -webkit-transition: #{$transitions};
+    -moz-transition: #{$transitions};
+    -o-transition: #{$transitions};
+    -ms-transition: #{$transitions};
+    transition: #{$transitions};
+}
+ 
+// use - @include manyTransitions( (top, box-shadow), 0.3s, ease-in-out, 0);
+// put your properties that you want to change inside a bracketed list (top, box-shadow)
+// followed by the timing, easing and delay as comma seperated values
+ 
+ 
 @mixin animation($name, $duration, $ease, $delay, $iteration: 1, $direction: both) {
   -webkit-animation: $name $duration $ease $delay $iteration $direction;
   -moz-animation: $name $duration $ease $delay $iteration $direction;
@@ -30,6 +60,19 @@
   @-ms-keyframes #{$name} { @content; }
   @keyframes #{$name} { @content; }
 }
+ 
+/* use :
+ 
+@include keyframes(fade){
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+ 
+*/
 
 
 //

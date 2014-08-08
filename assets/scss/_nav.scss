@@ -1,13 +1,17 @@
 .nav_menu {
-	//position: fixed;
-	z-index: 10;
-	//margin-left:200px;
+	position: fixed;
+	margin-top: $header_height;
+
+	@include respond ($tablet){
+		margin-top: 0px;
+		position: relative;
+		line-height: $header_height;
+	}
 }
 
 .nav_item {
 
 	text-decoration: none;
-
 
 }
 
@@ -17,7 +21,6 @@
 
 .nav_item_container {
 	display: block;
-	border-radius: 5px;
 	text-align: center;
 	
 	height: $gridheight * 20;
@@ -29,21 +32,6 @@
 		border: none;
 		line-height: $header_height;
 	}
-
-	// margin-top: -50px;
-	// postion: relative;
-	// z-index: 5;
-
-	// $i: 1s;
-	// @for $item from 1 to 6 {
-		
-	// 	&:nth-child(#{$item}){
-	// 		@include animation(slideDown, 3s, linear, $i);
-	// 	}
-
-	// 	$i: $i + .2s;
-	// }
-
 }
 
 .nav_btn_container{
@@ -112,23 +100,7 @@
 .nav_item_container {
 	display: none;
 	text-align: center;
-	
-	// margin-top: -50px;
-	// postion: relative;
-	// z-index: 5;
-
-	// $i: 1s;
-	// @for $item from 1 to 6 {
-		
-	// 	&:nth-child(#{$item}){
-	// 		@include animation(slideDown, 3s, linear, $i);
-	// 	}
-
-	// 	$i: $i + .2s;
-	// }
 
 }
 
-.nav_tab {
 
-}

@@ -1,16 +1,18 @@
 // Import Variables first to override the defaults set in bootstrap
 @import "variables";
+// Import Bootstrap
 @import "../../bootstrap/assets/stylesheets/bootstrap";
+/*********************************
+* Your own imports shoud go here
+*********************************/
 @import "mixins";
 @import "animations";
+@import "document";
 @import "text";
 @import "header";
 @import "nav";
 @import "content";
 @import "menu";
-// Import Bootstrap
 
 
-/*********************************
-* Your own imports shoud go here
-*********************************/
+

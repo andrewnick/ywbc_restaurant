@@ -12,7 +12,7 @@
 
 
 
-	<nav class='nav_menu col-xs-12 col-sm-offset-2 col-sm-6'>
+	<nav class='nav_menu col-xs-offset-3 col-xs-9 col-sm-offset-2 col-sm-6'>
 		<div class="row">
 			<div class="col-xs-12 col-sm-3 nav_item_container nav_item_container--first">
 				<a class="nav_item" href='#'>Home</a>
@@ -28,5 +28,5 @@
 			</div>
 		</div>
 	</nav>
-	
+
 </header>

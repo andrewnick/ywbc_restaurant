@@ -8034,7 +8034,22 @@ button.close {
     display: none !important;
   }
 }
+/*********************************
+* Your own imports shoud go here
+*********************************/
 /* mixins to make our lives easier */
+/* use :
+ 
+@include keyframes(fade){
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+ 
+*/
 @-webkit-keyframes slideDown {
   /* line 3, ../scss/_animations.scss */
   0% {
@@ -8093,6 +8108,131 @@ button.close {
   100% {
     -webkit-transform: translateY(0);
   }
+}
+
+@-webkit-keyframes slideLeft {
+  /* line 15, ../scss/_animations.scss */
+  0% {
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 19, ../scss/_animations.scss */
+  100% {
+    -webkit-transform: translateX(-80%);
+  }
+}
+
+@-moz-keyframes slideLeft {
+  /* line 15, ../scss/_animations.scss */
+  0% {
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 19, ../scss/_animations.scss */
+  100% {
+    -webkit-transform: translateX(-80%);
+  }
+}
+
+@-o-keyframes slideLeft {
+  /* line 15, ../scss/_animations.scss */
+  0% {
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 19, ../scss/_animations.scss */
+  100% {
+    -webkit-transform: translateX(-80%);
+  }
+}
+
+@-ms-keyframes slideLeft {
+  /* line 15, ../scss/_animations.scss */
+  0% {
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 19, ../scss/_animations.scss */
+  100% {
+    -webkit-transform: translateX(-80%);
+  }
+}
+
+@keyframes slideLeft {
+  /* line 15, ../scss/_animations.scss */
+  0% {
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 19, ../scss/_animations.scss */
+  100% {
+    -webkit-transform: translateX(-80%);
+  }
+}
+
+@-webkit-keyframes slideRight {
+  /* line 26, ../scss/_animations.scss */
+  0% {
+    -webkit-transform: translateX(-80%);
+  }
+
+  /* line 30, ../scss/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes slideRight {
+  /* line 26, ../scss/_animations.scss */
+  0% {
+    -webkit-transform: translateX(-80%);
+  }
+
+  /* line 30, ../scss/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-o-keyframes slideRight {
+  /* line 26, ../scss/_animations.scss */
+  0% {
+    -webkit-transform: translateX(-80%);
+  }
+
+  /* line 30, ../scss/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-ms-keyframes slideRight {
+  /* line 26, ../scss/_animations.scss */
+  0% {
+    -webkit-transform: translateX(-80%);
+  }
+
+  /* line 30, ../scss/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  /* line 26, ../scss/_animations.scss */
+  0% {
+    -webkit-transform: translateX(-80%);
+  }
+
+  /* line 30, ../scss/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+/* line 1, ../scss/_document.scss */
+body {
+  background-color: #1e1a19;
 }
 
 /* line 6, ../scss/_text.scss */
@@ -8160,8 +8300,6 @@ p {
 /* line 67, ../scss/_text.scss */
 a {
   text-decoration: none;
-  line-height: 1.5;
-  margin-top: 27px;
   margin-bottom: 0px;
   font-family: "Quando", serif;
   font-weight: normal;
@@ -8200,23 +8338,31 @@ a:hover {
 
 /* line 1, ../scss/_nav.scss */
 .nav_menu {
-  z-index: 10;
+  position: fixed;
+  margin-top: 111px;
+}
+@media screen and (min-width: 750px) {
+  /* line 1, ../scss/_nav.scss */
+  .nav_menu {
+    margin-top: 0px;
+    position: relative;
+    line-height: 111px;
+  }
 }
 
-/* line 7, ../scss/_nav.scss */
+/* line 12, ../scss/_nav.scss */
 .nav_item {
   text-decoration: none;
 }
 
-/* line 14, ../scss/_nav.scss */
+/* line 18, ../scss/_nav.scss */
 .nav_item_container--first {
   border-top: 1px solid #c7a061;
 }
 
-/* line 18, ../scss/_nav.scss */
+/* line 22, ../scss/_nav.scss */
 .nav_item_container {
   display: block;
-  border-radius: 5px;
   text-align: center;
   height: 60px;
   line-height: 60px;
@@ -8224,19 +8370,19 @@ a:hover {
   border-bottom: 1px solid #c7a061;
 }
 @media screen and (min-width: 750px) {
-  /* line 18, ../scss/_nav.scss */
+  /* line 22, ../scss/_nav.scss */
   .nav_item_container {
     border: none;
     line-height: 111px;
   }
 }
 
-/* line 49, ../scss/_nav.scss */
+/* line 37, ../scss/_nav.scss */
 .nav_btn_container {
   height: 111px;
 }
 
-/* line 53, ../scss/_nav.scss */
+/* line 41, ../scss/_nav.scss */
 .nav_btn {
   position: fixed;
   z-index: 10;
@@ -8248,38 +8394,38 @@ a:hover {
   height: 75px;
   outline: none;
 }
-/* line 68, ../scss/_nav.scss */
+/* line 56, ../scss/_nav.scss */
 .nav_btn:active, .nav_btn.active {
   border: none;
   outline: none;
   background-color: transparent;
 }
-/* line 73, ../scss/_nav.scss */
+/* line 61, ../scss/_nav.scss */
 .nav_btn:active:focus, .nav_btn.active:focus {
   color: #768b49;
   outline: none;
 }
-/* line 80, ../scss/_nav.scss */
+/* line 68, ../scss/_nav.scss */
 .nav_btn:hover {
   background-color: transparent;
 }
-/* line 83, ../scss/_nav.scss */
+/* line 71, ../scss/_nav.scss */
 .nav_btn:hover > .nav_btn_line {
   border: 1px solid black;
 }
-/* line 88, ../scss/_nav.scss */
+/* line 76, ../scss/_nav.scss */
 .nav_btn:focus {
   background-color: transparent;
   outline: none;
 }
 @media screen and (min-width: 750px) {
-  /* line 53, ../scss/_nav.scss */
+  /* line 41, ../scss/_nav.scss */
   .nav_btn {
     display: none;
   }
 }
 
-/* line 100, ../scss/_nav.scss */
+/* line 88, ../scss/_nav.scss */
 .nav_btn_line {
   display: block;
   background-color: #f1ecdc;
@@ -8288,18 +8434,36 @@ a:hover {
   border-radius: 3px;
 }
 
-/* line 108, ../scss/_nav.scss */
+/* line 96, ../scss/_nav.scss */
 .nav_btn_line + .nav_btn_line {
   margin-top: 15px;
 }
 
-/* line 112, ../scss/_nav.scss */
+/* line 100, ../scss/_nav.scss */
 .nav_item_container {
   display: none;
   text-align: center;
 }
 
 /* line 1, ../scss/_content.scss */
+.move_left {
+  -webkit-animation: slideLeft 1s cubic-bezier(0.565, -0.295, 0.445, 1.325) 0 1 both;
+  -moz-animation: slideLeft 1s cubic-bezier(0.565, -0.295, 0.445, 1.325) 0 1 both;
+  -o-animation: slideLeft 1s cubic-bezier(0.565, -0.295, 0.445, 1.325) 0 1 both;
+  -ms-animation: slideLeft 1s cubic-bezier(0.565, -0.295, 0.445, 1.325) 0 1 both;
+  animation: slideLeft 1s cubic-bezier(0.565, -0.295, 0.445, 1.325) 0 1 both;
+}
+
+/* line 5, ../scss/_content.scss */
+.move_right {
+  -webkit-animation: slideRight 1s cubic-bezier(0.565, -0.295, 0.445, 1.325) 0 1 both;
+  -moz-animation: slideRight 1s cubic-bezier(0.565, -0.295, 0.445, 1.325) 0 1 both;
+  -o-animation: slideRight 1s cubic-bezier(0.565, -0.295, 0.445, 1.325) 0 1 both;
+  -ms-animation: slideRight 1s cubic-bezier(0.565, -0.295, 0.445, 1.325) 0 1 both;
+  animation: slideRight 1s cubic-bezier(0.565, -0.295, 0.445, 1.325) 0 1 both;
+}
+
+/* line 11, ../scss/_content.scss */
 .content_container {
   position: relative;
   z-index: 1;
@@ -8307,12 +8471,12 @@ a:hover {
   padding-bottom: 30px;
 }
 
-/* line 9, ../scss/_content.scss */
+/* line 19, ../scss/_content.scss */
 .content_info_title {
   margin-right: 30px;
 }
 
-/* line 13, ../scss/_content.scss */
+/* line 23, ../scss/_content.scss */
 .content_header {
   padding-top: 10px;
   padding-left: 18px;
@@ -8320,17 +8484,54 @@ a:hover {
   height: 111px;
 }
 
-/* line 20, ../scss/_content.scss */
+/* line 30, ../scss/_content.scss */
 .content_location_map_overlay {
   background: transparent;
   position: relative;
 }
-
-/* line 1, ../scss/_menu.scss */
-.menu_list {
-  list-style: none;
+/* line 11, ../scss/_mixins.scss */
+.content_location_map_overlay:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-/*********************************
-* Your own imports shoud go here
-*********************************/
+/* line 5, ../scss/_menu.scss */
+.menu_list {
+  display: block;
+  margin: 0 auto;
+  margin-top: -9px;
+}
+
+/* line 11, ../scss/_menu.scss */
+.nav-justified > li, .nav-tabs.nav-justified > li, .nav-tabs.nav-justified > li {
+  border-radius: 0px;
+  float: left;
+  width: 50%;
+}
+
+/* line 17, ../scss/_menu.scss */
+.nav-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px 4px 0px 0px;
+}
+
+/* line 22, ../scss/_menu.scss */
+.nav_tab_pane {
+  background-color: #a49692;
+}
+
+/* line 26, ../scss/_menu.scss */
+.nav_tab {
+  background-color: #1e1a19;
+  border: grey;
+}
+
+/* line 33, ../scss/_menu.scss */
+.nav-tabs > li.active > a {
+  background-color: #a49692;
+}
+/* line 36, ../scss/_menu.scss */
+.nav-tabs > li.active > a:hover {
+  background-color: #a49692;
+}
