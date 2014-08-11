@@ -6,13 +6,11 @@
 	@include animation(slideRight, 1s, cubic-bezier(0.565, -0.295, 0.445, 1.325), 0);
 }
 
-
-
 .content_container{
 	position: relative;
 	z-index: 1;
 	background-color: $dark;
-
+	
 	padding-bottom: $gridheight*10;
 }
 
@@ -30,18 +28,21 @@
 .content_container_img {
 	
 	padding-top: $gridheight * 5;
-
-	@include respond ($tablet) {
-		padding-top: $gridheight * 5;
-	}
+	@include clearfix;
+	// @include respond ($tablet) {
+	// 	padding-top: $gridheight * 5;
+	// }
 
 }
 
+
 .content_container_details {
 	
-	@include respond ($tablet) {
-		padding-top: $gridheight * 5;
-	}
+	padding-top: $gridheight * 5;
+
+	// @include respond ($tablet) {
+	// 	padding-top: $gridheight * 5;
+	// }
 }
 
 .content_location_text {

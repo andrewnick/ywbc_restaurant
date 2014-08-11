@@ -8463,7 +8463,7 @@ a:hover {
   animation: slideRight 1s cubic-bezier(0.565, -0.295, 0.445, 1.325) 0 1 both;
 }
 
-/* line 11, ../scss/_content.scss */
+/* line 9, ../scss/_content.scss */
 .content_container {
   position: relative;
   z-index: 1;
@@ -8471,12 +8471,12 @@ a:hover {
   padding-bottom: 30px;
 }
 
-/* line 19, ../scss/_content.scss */
+/* line 17, ../scss/_content.scss */
 .content_info_title {
   margin-right: 30px;
 }
 
-/* line 23, ../scss/_content.scss */
+/* line 21, ../scss/_content.scss */
 .content_header {
   padding-top: 10px;
   padding-left: 18px;
@@ -8484,32 +8484,30 @@ a:hover {
   height: 111px;
 }
 
-/* line 30, ../scss/_content.scss */
+/* line 28, ../scss/_content.scss */
 .content_container_img {
   padding-top: 15px;
 }
-@media screen and (min-width: 750px) {
-  /* line 30, ../scss/_content.scss */
-  .content_container_img {
-    padding-top: 15px;
-  }
+/* line 11, ../scss/_mixins.scss */
+.content_container_img:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 39, ../scss/_content.scss */
+.content_container_details {
+  padding-top: 15px;
 }
 
 @media screen and (min-width: 750px) {
-  /* line 40, ../scss/_content.scss */
-  .content_container_details {
-    padding-top: 15px;
-  }
-}
-
-@media screen and (min-width: 750px) {
-  /* line 47, ../scss/_content.scss */
+  /* line 48, ../scss/_content.scss */
   .content_location_text {
     padding-bottom: 0px;
   }
 }
 
-/* line 56, ../scss/_content.scss */
+/* line 57, ../scss/_content.scss */
 .content_location_map_overlay {
   background: transparent;
   position: relative;
@@ -8523,40 +8521,73 @@ a:hover {
 
 /* line 5, ../scss/_menu.scss */
 .menu_list {
-  display: block;
-  margin: 0 auto;
-  margin-top: -9px;
+  padding-left: 50px;
+  color: #f1ecdc;
+}
+@media screen and (min-width: 750px) {
+  /* line 5, ../scss/_menu.scss */
+  .menu_list {
+    padding-left: 25px;
+  }
 }
 
-/* line 11, ../scss/_menu.scss */
+/* line 14, ../scss/_menu.scss */
+.menu_container_details {
+  border: 1px solid #f1ecdc;
+  margin-top: 15px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-bottom: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* line 27, ../scss/_menu.scss */
 .nav-justified > li, .nav-tabs.nav-justified > li, .nav-tabs.nav-justified > li {
   border-radius: 0px;
   float: left;
   width: 50%;
 }
 
-/* line 17, ../scss/_menu.scss */
+/* line 33, ../scss/_menu.scss */
 .nav-tabs.nav-justified > li > a {
   margin-right: 0;
   border-radius: 4px 4px 0px 0px;
 }
 
-/* line 22, ../scss/_menu.scss */
+/* line 38, ../scss/_menu.scss */
+.nav-tabs.nav-justified > li > a {
+  margin-bottom: 0px;
+}
+
+/* line 42, ../scss/_menu.scss */
 .nav_tab_pane {
-  background-color: #a49692;
-}
-
-/* line 26, ../scss/_menu.scss */
-.nav_tab {
+  padding-top: 9px;
   background-color: #1e1a19;
-  border: grey;
+  border: 1px solid #f1ecdc;
+  border-top: none;
 }
 
-/* line 33, ../scss/_menu.scss */
-.nav-tabs > li.active > a {
-  background-color: #a49692;
+/* line 49, ../scss/_menu.scss */
+.nav-tabs.nav-justified > .active > a {
+  border-bottom: none;
 }
-/* line 36, ../scss/_menu.scss */
+/* line 53, ../scss/_menu.scss */
+.nav-tabs.nav-justified > .active > a:hover {
+  border-bottom: none;
+}
+
+/* line 58, ../scss/_menu.scss */
+.nav-tabs.nav-justified > li > a {
+  border: 1px solid #f1ecdc;
+}
+
+/* line 62, ../scss/_menu.scss */
+.nav-tabs > li.active > a {
+  background-color: #1e1a19;
+  border-bottom: none;
+}
+/* line 66, ../scss/_menu.scss */
 .nav-tabs > li.active > a:hover {
-  background-color: #a49692;
+  background-color: #1e1a19;
 }

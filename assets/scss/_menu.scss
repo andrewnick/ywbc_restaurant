@@ -1,12 +1,28 @@
 // Menu tab colours
-$menu_tab_colour_active: lighten($dark, 50%);
-$menu_tab_colour_inactive:	$dark;
+$menu_tab_colour_active: $dark;
+$menu_tab_colour_inactive:	lighten($dark, 50%); 
 
 .menu_list {
-	display: block;
-	margin: 0 auto;
-	margin-top: -9px;
+	padding-left: 50px;
+	color: $off-white;
+
+	@include respond($tablet){
+		padding-left: 25px;
+	}
 }
+
+.menu_container_details {
+	border: 1px solid $off-white;
+	
+	
+	margin-top: $gridheight * 5;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-bottom: $gridheight * 5;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
 
 .nav-justified > li, .nav-tabs.nav-justified > li {
 	border-radius: 0px;
@@ -19,27 +35,35 @@ $menu_tab_colour_inactive:	$dark;
 	border-radius: 4px 4px 0px 0px;
 }
 
-.nav_tab_pane {
-	background-color: $menu_tab_colour_active;
+.nav-tabs.nav-justified > li > a {
+	margin-bottom: 0px;
 }
 
-.nav_tab {
+.nav_tab_pane {
+	padding-top: $gridheight * 3;
+	background-color: $menu_tab_colour_active;
+	border: 1px solid $off-white;
+	border-top: none;
+}
 
-	background-color: $menu_tab_colour_inactive;
-	border: grey;
+.nav-tabs.nav-justified > .active > a {
 
+	border-bottom: none;
+
+	&:hover {
+		border-bottom: none;
+	}
+}
+
+.nav-tabs.nav-justified > li > a {
+	border: 1px solid $off-white;
 }
 
 .nav-tabs > li.active > a { 
 	background-color: $menu_tab_colour_active;
+	border-bottom: none;
 
 	&:hover {
 		background-color: $menu_tab_colour_active;
 	}
 }
-
-
-// .menu_img {
-// 	width:100%;
-// 	max-height: 300px;
-// }
