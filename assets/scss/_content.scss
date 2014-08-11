@@ -27,6 +27,32 @@
 	height: $header_height;
 }
 
+.content_container_img {
+	
+	padding-top: $gridheight * 5;
+
+	@include respond ($tablet) {
+		padding-top: $gridheight * 5;
+	}
+
+}
+
+.content_container_details {
+	
+	@include respond ($tablet) {
+		padding-top: $gridheight * 5;
+	}
+}
+
+.content_location_text {
+	
+	//padding-bottom: $gridheight * 3;
+
+	@include respond ($tablet) {
+		padding-bottom: 0px;
+	}
+}
+
 .content_location_map_overlay {
 	@include clearfix();
    background:transparent; 

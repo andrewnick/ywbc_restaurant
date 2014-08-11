@@ -8289,8 +8289,8 @@ h5.nav_item {
 /* line 57, ../scss/_text.scss */
 p {
   line-height: 1.5;
-  margin-top: 27px;
-  margin-bottom: 0px;
+  margin-bottom: 27px;
+  margin-top: 0px;
   font-family: "Quando", serif;
   font-weight: normal;
   font-size: 18px;
@@ -8485,6 +8485,31 @@ a:hover {
 }
 
 /* line 30, ../scss/_content.scss */
+.content_container_img {
+  padding-top: 15px;
+}
+@media screen and (min-width: 750px) {
+  /* line 30, ../scss/_content.scss */
+  .content_container_img {
+    padding-top: 15px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  /* line 40, ../scss/_content.scss */
+  .content_container_details {
+    padding-top: 15px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  /* line 47, ../scss/_content.scss */
+  .content_location_text {
+    padding-bottom: 0px;
+  }
+}
+
+/* line 56, ../scss/_content.scss */
 .content_location_map_overlay {
   background: transparent;
   position: relative;

@@ -3,7 +3,7 @@
   
   <?php require_once("includes/head.php") ?>
   
-  <body class="container-fluid">
+  <body class="container">
 
       <?php require_once('includes/header.php') ?>
 
