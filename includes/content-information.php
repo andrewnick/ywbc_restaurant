@@ -4,8 +4,8 @@
 			<h3 class="col-xs-8 col-xs-offset-2">Hours</h3>
 		</div>
 		<div class="row">
-			<h4 class="col-xs-8 col-xs-offset-2 col-sm-12">Mon - Fri: 11am - 11 pm</h4>
-			<h4 class="col-xs-8 col-xs-offset-2 col-sm-12">Sat - Sun: 11am - 1 am</h4>
+			<h4 class="col-xs-8 col-xs-offset-2 col-sm-12">Mon - Fri: 11am - 11pm</h4>
+			<h4 class="col-xs-8 col-xs-offset-2 col-sm-12">Sat - Sun: 11am - 1am</h4>
 		</div>
 	</article>
 

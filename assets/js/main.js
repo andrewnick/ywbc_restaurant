@@ -14,7 +14,12 @@ $(document).ready( function(){
 	// initialize site depending on initial view port width
 	layoutInit();
 
+	$(function () { $("[data-toggle='tooltip']").tooltip(); });
 
+	$("#mapOverlay").click(function(event){
+	  event.preventDefault();
+	});
+		
 	$('button').on('click', function () {
 
 		$(".nav_item_container").show();

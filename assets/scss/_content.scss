@@ -55,11 +55,19 @@
 }
 
 .content_location_map_overlay {
-	@include clearfix();
-   background:transparent; 
+	@include clearfix(); 
+   background: transparent;
    position:relative; 
+   z-index: 20;
+   width:2000px;
+   height:2000px;
    // width:640px;
    // height:480px; /* your iframe height */
    // top:480px;  /* your iframe height */
    // margin-top:-480px;  /* your iframe height */
+}
+
+#mapOverlay{
+	width: 2000px;
+   height: 2000px;
 }

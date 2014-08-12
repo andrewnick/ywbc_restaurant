@@ -20,10 +20,29 @@
 			</div>
 
 			<div class="col-sm-8 col-md-9">
-				<div class="content_location_map_overlay embed-responsive embed-responsive-4by3" onClick="style.pointerEvents='none'">
-					<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11551.086026545165!2d172.625216!3d-43.63211444999978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDM3JzU1LjYiUyAxNzLCsDM3JzMwLjgiRQ!5e0!3m2!1sen!2s!4v1407408954767"></iframe>
+				<div class="embed-responsive embed-responsive-4by3">
+				<a href="#" id="mapOverlay" >
+					<div class="content_location_map_overlay"  onClick="style.pointerEvents='none'"></div> 
+				</a>
+						
+					<iframe class="embed-responsive-item"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11551.086026545165!2d172.625216!3d-43.63211444999978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDM3JzU1LjYiUyAxNzLCsDM3JzMwLjgiRQ!5e0!3m2!1sen!2s!4v1407408954767"></iframe>
 				</div>
+
 			</div>
 		</div>
 	</div>
 </div>
+
+
+<!-- "https://www.google.com/maps/embed/v1/search?key=API_KEY&q=record+stores+in+Seattle&center=-33.8569,151.2152"" -->
+
+<!-- https://www.google.com/maps/embed/v1/place
+  ?key=API_KEY
+  &q=sign+of+the+bellbird
+  &center=-43.632115,172.625216
+  &zoom=13 -->
+
+  <!-- https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11551.086026545165!2d172.625216!3d-43.63211444999978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDM3JzU1LjYiUyAxNzLCsDM3JzMwLjgiRQ!5e0!3m2!1sen!2s!4v1407408954767 -->
+
+  <!-- data-toggle="tooltip" data-title="Click to Enable" data-trigger="hover" data-container="div" data-animation="true" data-placement="bottom" -->

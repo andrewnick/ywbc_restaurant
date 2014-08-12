@@ -8511,12 +8511,21 @@ a:hover {
 .content_location_map_overlay {
   background: transparent;
   position: relative;
+  z-index: 20;
+  width: 2000px;
+  height: 2000px;
 }
 /* line 11, ../scss/_mixins.scss */
 .content_location_map_overlay:after {
   content: "";
   display: table;
   clear: both;
+}
+
+/* line 70, ../scss/_content.scss */
+#mapOverlay {
+  width: 2000px;
+  height: 2000px;
 }
 
 /* line 5, ../scss/_menu.scss */
