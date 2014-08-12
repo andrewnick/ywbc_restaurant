@@ -8528,10 +8528,6 @@ a:hover {
   margin-right: 15px;
   float: left;
 }
-/* line 75, ../scss/_content.scss */
-.content_information_title.content_information_title-hours {
-  width: 78px;
-}
 
 /* line 81, ../scss/_content.scss */
 .content_information_details {
