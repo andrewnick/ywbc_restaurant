@@ -67,6 +67,21 @@
    // margin-top:-480px;  /* your iframe height */
 }
 
+.content_information_title {
+	width: 78px;
+	margin-right: $gridheight * 5;
+	float:left;
+
+	// &.content_information_title-hours{
+	// 	width: 78px;
+	// }
+
+}
+
+.content_information_details {
+	float: left;
+}
+
 #mapOverlay{
 	width: 2000px;
    height: 2000px;
