@@ -12,6 +12,7 @@
 	background-color: $dark;
 	
 	padding-bottom: $gridheight*10;
+	padding-top: $gridheight*10;
 }
 
 .content_info_title{
@@ -21,7 +22,8 @@
 .content_header{
 	padding-top: 10px;
 	padding-left: $gridheight * 6;
-	background-color: $lite-brown;
+	@include addBorder($gold, $width: 1px, $top: true);
+//	background-color: $lite-brown;
 	height: $header_height;
 }
 

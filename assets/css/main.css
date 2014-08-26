@@ -8326,10 +8326,10 @@ a:hover {
 /* line 1, ../scss/_header.scss */
 .header_background {
   height: 111px;
-  background-color: #754c24;
+  border-bottom: 1px solid #c7a061;
 }
 
-/* line 6, ../scss/_header.scss */
+/* line 7, ../scss/_header.scss */
 .header_logo {
   height: 93px;
   padding-top: 18px;
@@ -8339,50 +8339,50 @@ a:hover {
 /* line 1, ../scss/_nav.scss */
 .nav_menu {
   position: fixed;
-  margin-top: 111px;
+  margin-top: 110px;
 }
 @media screen and (min-width: 750px) {
   /* line 1, ../scss/_nav.scss */
   .nav_menu {
     margin-top: 0px;
+    margin-left: 195px;
     position: relative;
     line-height: 111px;
   }
 }
 
-/* line 12, ../scss/_nav.scss */
+/* line 13, ../scss/_nav.scss */
 .nav_item {
   text-decoration: none;
 }
 
-/* line 18, ../scss/_nav.scss */
+/* line 19, ../scss/_nav.scss */
 .nav_item_container--first {
   border-top: 1px solid #c7a061;
 }
 
-/* line 22, ../scss/_nav.scss */
+/* line 23, ../scss/_nav.scss */
 .nav_item_container {
   display: block;
   text-align: center;
   height: 60px;
   line-height: 60px;
-  background-color: #754c24;
   border-bottom: 1px solid #c7a061;
 }
 @media screen and (min-width: 750px) {
-  /* line 22, ../scss/_nav.scss */
+  /* line 23, ../scss/_nav.scss */
   .nav_item_container {
     border: none;
     line-height: 111px;
   }
 }
 
-/* line 37, ../scss/_nav.scss */
+/* line 38, ../scss/_nav.scss */
 .nav_btn_container {
   height: 111px;
 }
 
-/* line 41, ../scss/_nav.scss */
+/* line 42, ../scss/_nav.scss */
 .nav_btn {
   position: fixed;
   z-index: 10;
@@ -8394,38 +8394,38 @@ a:hover {
   height: 75px;
   outline: none;
 }
-/* line 56, ../scss/_nav.scss */
+/* line 57, ../scss/_nav.scss */
 .nav_btn:active, .nav_btn.active {
   border: none;
   outline: none;
   background-color: transparent;
 }
-/* line 61, ../scss/_nav.scss */
+/* line 62, ../scss/_nav.scss */
 .nav_btn:active:focus, .nav_btn.active:focus {
   color: #768b49;
   outline: none;
 }
-/* line 68, ../scss/_nav.scss */
+/* line 69, ../scss/_nav.scss */
 .nav_btn:hover {
   background-color: transparent;
 }
-/* line 71, ../scss/_nav.scss */
+/* line 72, ../scss/_nav.scss */
 .nav_btn:hover > .nav_btn_line {
   border: 1px solid black;
 }
-/* line 76, ../scss/_nav.scss */
+/* line 77, ../scss/_nav.scss */
 .nav_btn:focus {
   background-color: transparent;
   outline: none;
 }
 @media screen and (min-width: 750px) {
-  /* line 41, ../scss/_nav.scss */
+  /* line 42, ../scss/_nav.scss */
   .nav_btn {
     display: none;
   }
 }
 
-/* line 88, ../scss/_nav.scss */
+/* line 89, ../scss/_nav.scss */
 .nav_btn_line {
   display: block;
   background-color: #f1ecdc;
@@ -8434,12 +8434,12 @@ a:hover {
   border-radius: 3px;
 }
 
-/* line 96, ../scss/_nav.scss */
+/* line 97, ../scss/_nav.scss */
 .nav_btn_line + .nav_btn_line {
   margin-top: 15px;
 }
 
-/* line 100, ../scss/_nav.scss */
+/* line 101, ../scss/_nav.scss */
 .nav_item_container {
   display: none;
   text-align: center;
@@ -8469,22 +8469,23 @@ a:hover {
   z-index: 1;
   background-color: #1e1a19;
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 
-/* line 17, ../scss/_content.scss */
+/* line 18, ../scss/_content.scss */
 .content_info_title {
   margin-right: 30px;
 }
 
-/* line 21, ../scss/_content.scss */
+/* line 22, ../scss/_content.scss */
 .content_header {
   padding-top: 10px;
   padding-left: 18px;
-  background-color: #754c24;
+  border-top: 1px solid #c7a061;
   height: 111px;
 }
 
-/* line 28, ../scss/_content.scss */
+/* line 30, ../scss/_content.scss */
 .content_container_img {
   padding-top: 15px;
 }
@@ -8495,19 +8496,19 @@ a:hover {
   clear: both;
 }
 
-/* line 39, ../scss/_content.scss */
+/* line 41, ../scss/_content.scss */
 .content_container_details {
   padding-top: 15px;
 }
 
 @media screen and (min-width: 750px) {
-  /* line 48, ../scss/_content.scss */
+  /* line 50, ../scss/_content.scss */
   .content_location_text {
     padding-bottom: 0px;
   }
 }
 
-/* line 57, ../scss/_content.scss */
+/* line 59, ../scss/_content.scss */
 .content_location_map_overlay {
   background: transparent;
   position: relative;
@@ -8522,19 +8523,19 @@ a:hover {
   clear: both;
 }
 
-/* line 70, ../scss/_content.scss */
+/* line 72, ../scss/_content.scss */
 .content_information_title {
   width: 78px;
   margin-right: 15px;
   float: left;
 }
 
-/* line 76, ../scss/_content.scss */
+/* line 78, ../scss/_content.scss */
 .content_information_details {
   float: left;
 }
 
-/* line 80, ../scss/_content.scss */
+/* line 82, ../scss/_content.scss */
 #mapOverlay {
   width: 2000px;
   height: 2000px;

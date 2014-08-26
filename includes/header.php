@@ -12,12 +12,12 @@
 
 
 
-	<nav class='nav_menu col-xs-offset-3 col-xs-9 col-sm-offset-0 col-sm-8 col-md-offset-1 col-md-7'>
+	<nav class='nav_menu col-xs-offset-3 col-xs-9 col-sm-offset-0 col-sm-8 col-md-offset-2 col-md-6'>
 		<div class="row">
-			<div class="col-xs-12 col-sm-3 nav_item_container nav_item_container--first">
+<!-- 			<div class="col-xs-12 col-sm-3 nav_item_container nav_item_container--first">
 				<a class="nav_item" href='#'>Home</a>
-			</div>
-			<div class="col-xs-12 col-sm-3 nav_item_container">
+			</div> -->
+			<div class="col-xs-12 col-sm-3 nav_item_container nav_item_container--first">
 				<a class="nav_item" href='#menu'>Menu</a>
 			</div>
 			<div class="col-xs-12 col-sm-3 nav_item_container">

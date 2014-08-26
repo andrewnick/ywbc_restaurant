@@ -1,9 +1,10 @@
 .nav_menu {
 	position: fixed;
-	margin-top: $header_height;
+	margin-top: $header_height - 1;
 
 	@include respond ($tablet){
 		margin-top: 0px;
+		margin-left: 195px;
 		position: relative;
 		line-height: $header_height;
 	}
@@ -25,7 +26,7 @@
 	
 	height: $gridheight * 20;
 	line-height: $gridheight *20;
-	background-color: $lite-brown;
+	//background-color: $lite-brown;
 	@include addBorder($gold, $width: 1px, $bottom: true);
 
 	@include respond ($tablet){
