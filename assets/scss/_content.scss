@@ -40,7 +40,10 @@
 
 .content_container_details {
 	
-	padding-top: $gridheight * 5;
+	// padding-top: $gridheight * 5;
+
+	padding-bottom: $gridheight*10;
+	padding-top: $gridheight*15;
 
 	// @include respond ($tablet) {
 	// 	padding-top: $gridheight * 5;

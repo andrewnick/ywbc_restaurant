@@ -8497,17 +8497,18 @@ a:hover {
 
 /* line 41, ../scss/_content.scss */
 .content_container_details {
-  padding-top: 15px;
+  padding-bottom: 30px;
+  padding-top: 45px;
 }
 
 @media screen and (min-width: 750px) {
-  /* line 50, ../scss/_content.scss */
+  /* line 53, ../scss/_content.scss */
   .content_location_text {
     padding-bottom: 0px;
   }
 }
 
-/* line 59, ../scss/_content.scss */
+/* line 62, ../scss/_content.scss */
 .content_location_map_overlay {
   background: transparent;
   position: relative;
@@ -8522,19 +8523,19 @@ a:hover {
   clear: both;
 }
 
-/* line 72, ../scss/_content.scss */
+/* line 75, ../scss/_content.scss */
 .content_information_title {
   width: 78px;
   margin-right: 15px;
   float: left;
 }
 
-/* line 78, ../scss/_content.scss */
+/* line 81, ../scss/_content.scss */
 .content_information_details {
   float: left;
 }
 
-/* line 82, ../scss/_content.scss */
+/* line 85, ../scss/_content.scss */
 #mapOverlay {
   width: 2000px;
   height: 2000px;
