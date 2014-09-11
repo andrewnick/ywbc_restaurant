@@ -2,6 +2,18 @@
 $menu_tab_colour_active: $dark;
 $menu_tab_colour_inactive:	lighten($dark, 50%); 
 
+
+.table {
+	margin-bottom:0px;
+
+}
+
+.table > tbody > tr > td {
+
+	border-top: none;
+	padding-left: 15px;
+}
+
 .menu_list {
 	padding-left: 50px;
 	color: $off-white;
