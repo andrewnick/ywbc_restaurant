@@ -10,29 +10,51 @@ $menu_tab_colour_inactive:	lighten($dark, 50%);
 
 .table > tbody > tr > td {
 
-	border-top: none;
+	border-top: none;// border-bottom: 1px $off-white solid;
 	padding-left: 15px;
 }
+
+.table > thead > tr > th {
+	border-bottom: none;
+}
+
+.table > tbody > tr {
+	border-bottom: 1px $off-white solid;
+
+	&:last-child {
+		border-bottom:none;
+	}
+}
+
+.menu_table {
+
+	border: 1px $off-white solid;
+	padding-bottom: $gridheight *5;
+	@include clearfix();
+}
+
 
 .menu_list {
 	padding-left: 50px;
 	color: $off-white;
 
 	@include respond($tablet){
-		padding-left: 25px;
+		padding-left: 0px;
+		margin-left: $gridheight * 10;
+		margin-right: $gridheight * 10;
 	}
 }
 
 .menu_container_details {
-	border: 1px solid $off-white;
+	// border: 1px solid $off-white;
 	
 	
 	margin-top: $gridheight * 5;
-	margin-right: 0px;
-	margin-left: 0px;
-	padding-bottom: $gridheight * 5;
-	padding-left: 0px;
-	padding-right: 0px;
+	// margin-right: 0px;
+	// margin-left: 0px;
+	// padding-bottom: $gridheight * 5;
+	// padding-left: 0px;
+	// padding-right: 0px;
 }
 
 
@@ -43,12 +65,14 @@ $menu_tab_colour_inactive:	lighten($dark, 50%);
 }
 
 .nav-tabs.nav-justified > li > a {
+//	color: $dark;
 	margin-right: 0;
 	border-radius: 4px 4px 0px 0px;
+	margin-bottom: 0px;
 }
 
-.nav-tabs.nav-justified > li > a {
-	margin-bottom: 0px;
+.nav-tabs.nav-justified > .active > a {
+	color: $off-white;
 }
 
 .nav_tab_pane {

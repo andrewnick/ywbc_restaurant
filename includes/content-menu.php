@@ -36,10 +36,14 @@
 		<!-- Tab panes -->
 		<div class="tab-content">
 		  <div class="tab-pane active nav_tab_pane " id="food">
-		  	<table class="table">
+		  	<table class="table table-condensed">
+		  		<thead>
+		  			<th class="col-xs-8"></th>
+		  			<th class="col-xs-2"></th>
+		  		</thead>
 		  		<tbody>
-		  			<tr>
-		  				<td><h4>Samuel Marsden</h4></td>
+		  			<tr class="menu_table_row">
+		  				<td class="menu_col-name"><h4>Samuel Marsden</h4></td>
 		  				<td><h4>$15</h4></td>
 		  			</tr>
 		  			<tr>
@@ -79,6 +83,10 @@
 		  </div>
 		  <div class="tab-pane nav_tab_pane" id="drinks">
 		  	<table class="table menu_list">
+		  		<thead>
+		  			<th class="col-xs-offset-1 col-xs-9"></th>
+		  			<th class="col-xs-2"></th>
+		  		</thead>
 		  		<tbody>
 		  			<tr>
 		  				<td><h4>Marsden</h4></td>
@@ -123,35 +131,97 @@
 	</div>
 
 	<div class="menu_container_details hidden-xs col-sm-12">
-		<div class="col-sm-offset-1 col-sm-5">
-			<h3> Food </h3>
-			<ol class="menu_list">
-				<li><h4>Samuel Marsden...............$15</h4></li>
-				<li><h4>James Busby .....................$14</h4></li>
-				<li><h4>John Campbell...................$16</h4></li>
-				<li><h4>William Hobson.................$15</h4></li>
-				<li><h4>John McKenzie..................$18</h4></li>
-				<li><h4>Governor Gipps.................$20</h4></li>
-				<li><h4>Major Thomas Bunbury.....$16</h4></li>
-				<li><h4>Commissioner William......$15</h4></li>
-				<li><h4>Hōne Heke.........................$16</h4></li>
-				<li><h4>Governor George ...............$15</h4></li>
-			</ol>
-		</div>
-		<div class="col-sm-offset-1 col-sm-5">
-			<h3> Drinks </h3>
-		  	<ol class="menu_list">
-				<li><h4>Marsden...............$15</h4></li>
-				<li><h4>Busby .....................$14</h4></li>
-				<li><h4>Campbell...................$16</h4></li>
-				<li><h4>Hobson.................$15</h4></li>
-				<li><h4>McKenzie..................$18</h4></li>
-				<li><h4>Gipps.................$20</h4></li>
-				<li><h4>Bunbury.....$16</h4></li>
-				<li><h4>William......$15</h4></li>
-				<li><h4>Heke.........................$16</h4></li>
-				<li><h4>George ...............$15</h4></li>
-			</ol>
+		<div class="menu_table">
+			<div class="col-sm-6">
+				<div class="menu_list">
+					<h3> Food </h3>
+				  	<table class="table table-condensed ">
+				  		<thead>
+				  			<th class="col-xs-8"></th>
+				  			<th class="col-xs-2"></th>
+				  		</thead>
+				  		<tbody>
+				  			<tr class="menu_table_row">
+				  				<td class="menu_col-name"><h4>Samuel Marsden</h4></td>
+				  				<td><h4>$15</h4></td>
+				  			</tr>
+				  			<tr>
+				  				<td><h4>James Busby</h4></td>
+				  				<td><h4>$15</h4></td>
+				  			</tr>
+				  			<tr>
+				  				<td><h4>John Campbell</h4></td>
+				  				<td><h4>$14</h4></td>
+				  			</tr>
+				  			<tr>
+				  				<td><h4>William Hobson</h4></td>
+				  				<td><h4>$16</h4></td>
+				  			</tr>
+				  			<tr>
+				  				<td><h4>Governor Gipps</h4></td>
+				  				<td><h4>$15</h4></td>
+				  			</tr>
+				  			<tr>
+				  				<td><h4>Major Thomas Bunbury</h4></td>
+				  				<td><h4>$18</h4></td>
+				  			</tr>
+				  			<tr>
+				  				<td><h4>Commissioner William</h4></td>
+				  				<td><h4>$20</h4></td>
+				  			</tr>
+				  			<tr>
+				  				<td><h4>Hōne Heke</h4></td>
+				  				<td><h4>$16</h4></td>
+				  			</tr>
+				  			<tr>
+				  				<td><h4>Governor George</h4></td>
+				  				<td><h4>$15</h4></td>
+				  			</tr>
+				  		</tbody>
+				  	</table>
+			  	</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="menu_list">
+					<h3> Drinks </h3>
+				  	<table class="table table-condensed ">
+				  		<thead>
+				  			<th class="col-xs-offset-1 col-xs-9"></th>
+				  			<th class="col-xs-2"></th>
+				  		</thead>
+				  		<tbody>
+				  			<tr>
+				  				<td><h4>Marsden</h4></td>
+				  				<td><h4>$15</h4></td>
+				  			</tr>
+				  			<tr>
+				  				<td><h4>Busby</h4></td>
+				  				<td><h4>$15</h4></td>
+				  			</tr>
+				  			<tr>
+				  				<td><h4>Campbell</h4></td>
+				  				<td><h4>$14</h4></td>
+				  			</tr>
+				  			<tr>
+				  				<td><h4>Hobson</h4></td>
+				  				<td><h4>$16</h4></td>
+				  			</tr>
+				  			<tr>
+				  				<td><h4>Gipps</h4></td>
+				  				<td><h4>$15</h4></td>
+				  			</tr>
+				  			<tr>
+				  				<td><h4>Bunbury</h4></td>
+				  				<td><h4>$18</h4></td>
+				  			</tr>
+				  			<tr>
+				  				<td><h4>George</h4></td>
+				  				<td><h4>$15</h4></td>
+				  			</tr>
+				  		</tbody>
+				  	</table>
+			  	</div>
+			</div>
 		</div>
 	 </div>
 </div>

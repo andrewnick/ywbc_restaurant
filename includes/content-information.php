@@ -1,5 +1,5 @@
 <section class="row content_container">
-	<article class="content_container_img col-xs-12  col-sm-offset-2 col-sm-4">
+	<article class="content_container_img col-xs-12 col-sm-6 col-md-offset-2 col-md-4">
 
 		<div class="row">
 			<h3 class="col-xs-8 col-xs-offset-2">Hours</h3>
@@ -24,7 +24,7 @@
 		</div>
 	</article>
 
-	<article class="content_container_img col-xs-12 col-sm-4">
+	<article class="content_container_img col-xs-12 col-sm-6 col-md-4">
 
 		<div class="row">
 			<h3 class="col-xs-8 col-xs-offset-2">Contact</h3>

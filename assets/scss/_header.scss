@@ -1,6 +1,6 @@
 .header_background{
 	height: $header_height;
-	@include addBorder($gold, $width: 1px, $bottom: true);
+	//@include addBorder($gold, $width: 1px, $bottom: true);
 	//background-color: $lite-brown;
 }
 
